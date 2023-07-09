@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Work+Sans:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --clr-primary: #5A61ED;
+    --clr-secondary: #FFFFFF;
+    --clr-bg: #F4F5FC;
+    --clr-black: #000000;
+    --clr-input-text: #111111;
+    --clr-label: #7C7C7C;
+    --clr-bg-img: #F9FAFF;
+    --clr-input-box: #F2F2F2;
+    --clr-invalid-input-text: #FF2222;
+    --clr-invalid-input-box: #FF2828;
+}
+
+html {
+    height: 100%
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--clr-bg);
+}
+
+.cntnr {
+    display: flex;
+}
+
+header {
+    flex: 2.06;
+    background-color: var(--clr-primary);
+    position: relative;
+}
+
+h1 {
+    color: var(--clr-secondary);
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 3.0625rem;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1.37375rem 0.35625rem;
+}
+
+main {
+    flex: 7.94;
+    background-color: var(--clr-secondary);
+    padding: 2.4075rem 1.375rem 2.03rem 1.3rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: var(--clr-input-text);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.375rem;
+    letter-spacing: -0.46px;
+}
+
+h3 {
+    color: var(--clr-input-text);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    margin-bottom: 1.25rem;
+}
+
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 0.8125rem;
+}
+
+
+label,
+legend {
+    color: var(--clr-label);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: normal;
+}
+
+input,
+.gender {
+    color: var(--clr-input-text);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.account-and-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.account {
+    color: var(--clr-black);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.8125rem;
+    margin-bottom: 0.6875rem;
+    align-self: flex-end;
+}
+
+button {
+    color: var(--clr-secondary);
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: normal;
+
+    background-color: var(--clr-primary);
+    border: 0.5px solid var(--clr-secondary);
+    padding: 7px 26px 7px 25px;
+}
+
+@media (min-width: 800px) {
+    .cntnr {
+        /* max-width: 41.5625rem;
+        max-height: 30.0625rem; */
+        min-width: 83.125%;
+        min-height: 80%;
+    }
+}
