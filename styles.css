@@ -94,6 +94,17 @@ form {
     gap: 1rem 0.8125rem;
 }
 
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-bottom: 6px;
+    border-bottom: var(--clr-input-box) solid 0.7px;
+}
+
+.form-item-radio {
+    border: none;
+}
 
 label,
 legend {
@@ -104,12 +115,67 @@ legend {
     line-height: normal;
 }
 
+input {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+input:focus-visible {
+    outline: var(--clr-primary) auto 0.3px;
+}
+
+.date-select {
+    display: flex;
+    gap: 9.8px;
+}
+
+#day,
+#month,
+#year {
+    flex-grow: 1;
+}
+
+select {
+    border: none;
+    background: transparent;
+}
+
+select:focus-visible {
+    outline: var(--clr-primary) auto 0.3px;
+}
+
+#password,
+#confirm-password {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
 input,
 .gender {
     color: var(--clr-input-text);
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     font-size: 0.875rem;
+}
+
+.gender-radio-buttons {
+    display: flex;
+    gap: 19px;
+}
+
+.gender-radio {
+    gap: 6px;
+}
+
+input[type="radio"] {
+    accent-color: var(--clr-primary);
+    border: var(--clr-primary) solid 0.5px;
+    padding: 2px;
+    width: 12px;
+    height: 12px;
 }
 
 .account-and-button {
@@ -136,6 +202,19 @@ button {
     background-color: var(--clr-primary);
     border: 0.5px solid var(--clr-secondary);
     padding: 7px 26px 7px 25px;
+}
+
+h2,
+h3,
+form {
+    z-index: 1;
+}
+
+#profile-svg {
+    /* box-sizing: border-box; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 @media (min-width: 800px) {
