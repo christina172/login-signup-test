@@ -100,6 +100,7 @@ form {
     gap: 4px;
     padding-bottom: 6px;
     border-bottom: var(--clr-input-box) solid 0.7px;
+    box-sizing: border-box;
 }
 
 .form-item-radio {
@@ -121,9 +122,9 @@ input {
     background: transparent;
 }
 
-input:focus-visible {
-    outline: var(--clr-primary) auto 0.3px;
-}
+/* input:focus-visible {
+    outline: var(--clr-primary) auto 0.2px;
+} */
 
 .date-select {
     display: flex;
@@ -204,6 +205,8 @@ button {
     padding: 7px 26px 7px 25px;
 }
 
+/* SVG */
+
 h2,
 h3,
 form {
@@ -211,11 +214,12 @@ form {
 }
 
 #profile-svg {
-    /* box-sizing: border-box; */
     position: absolute;
     bottom: 0;
     right: 0;
 }
+
+/* Media queries */
 
 @media (min-width: 800px) {
     .cntnr {

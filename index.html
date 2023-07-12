@@ -16,18 +16,24 @@
             <h1>Sign up</h1>
         </header>
         <main>
-            <object id="profile-svg" type="image/svg+xml" data="profile.svg"></object>
+            <object id="profile-svg" type="image/svg+xml" data="./images/profile.svg"></object>
             <h2>New user?</h2>
             <h3>Use the form below to create your account.</h3>
             <form>
                 <div class="form-items">
                     <div class="form-item">
                         <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name" required />
+                        <div class="validation-container">
+                            <input type="text" id="first-name" name="first-name" required />
+                            <span></span>
+                        </div>
                     </div>
                     <div class="form-item">
                         <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name" required />
+                        <div class="validation-container">
+                            <input type="text" id="last-name" name="last-name" required />
+                            <span></span>
+                        </div>
                     </div>
                     <div class="form-item">
                         <label for="nationality">Nationality</label>
@@ -41,7 +47,10 @@
                     </div>
                     <div class="form-item">
                         <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required />
+                        <div class="validation-container">
+                            <input type="email" id="email" name="email" required />
+                            <span></span>
+                        </div>
                     </div>
                     <div class="form-item">
                         <label for="day">Date of Birth</label>
@@ -77,19 +86,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-item">
+                    <div class="form-item" id="password-container">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" minlength="8"
-                            pattern="^[a-z]{1,}[A-Z]{1,}\d{1,}$" required />
+                        <div class="validation-container">
+                            <input type="password" id="password" name="password" required />
+                            <span></span>
+                        </div>
                     </div>
-                    <div class="form-item">
+                    <div class=" form-item" id="confirm-password-container">
                         <label for="confirm-password">Confirm password</label>
-                        <input type="password" id="confirm-password" name="confirm-password" required />
+                        <div class="validation-container">
+                            <input type="password" id="confirm-password" name="confirm-password" required />
+                            <span></span>
+                        </div>
                     </div>
                 </div>
                 <div class="account-and-button">
                     <p class="account">Have an account? <a href="#">Login</a></p>
-                    <button type="submit">Complete Signup</button>
+                    <button type="submit" id="submit">Complete Signup</button>
                 </div>
             </form>
         </main>
