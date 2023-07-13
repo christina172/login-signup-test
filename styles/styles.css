@@ -183,6 +183,10 @@ select:focus-visible {
     outline: var(--clr-primary) auto 0.3px;
 }
 
+option {
+    color: var(--clr-input-text);
+}
+
 /* Radio button styles */
 
 .gender-radio-buttons {

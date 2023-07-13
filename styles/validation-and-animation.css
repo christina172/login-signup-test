@@ -26,7 +26,7 @@ input:valid+span {
 }
 
 input:valid+span::before {
-    content: url(./images/check.svg);
+    content: url(../images/check.svg);
 }
 
 /* Form animations */
