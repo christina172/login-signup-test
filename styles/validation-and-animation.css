@@ -80,6 +80,8 @@ input:valid+span::before {
     }
 }
 
+/* Button animation */
+
 .shake {
     animation: 0.5s shake 1 ease-in-out;
 }

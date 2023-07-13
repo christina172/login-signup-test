@@ -74,7 +74,7 @@ firstName.addEventListener("input", (e) => { checkFieldsOnInput(e.target) });
 lastName.addEventListener("input", (e) => { checkFieldsOnInput(e.target) });
 email.addEventListener("input", (e) => { checkFieldsOnInput(e.target) });
 
-// add submit button animation
+// Add submit button animation
 
 const form = document.querySelector("form");
 const button = document.getElementById("submit");
@@ -89,11 +89,22 @@ button.addEventListener("animationend", () => {
     button.classList.remove("shake");
 });
 
-// clear the form
+// Clear the form and show popup
+
+const popup = document.querySelector(".popup");
+const main = document.querySelector("main");
 
 function clear(e) {
     e.preventDefault();
     form.reset();
+    main.innerHTML = "";
+    main.innerHTML += `<div class="popup"><h2 class="h2-success">Thank You!</h2><h3 class="h3-success">you registered!</h3><p class="account account-success">Have an account? <a href="#">Login</a></p></div>`;
 };
 
 form.addEventListener("submit", clear);
+
+
+
+
+
+

@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Sign Up Test</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/validation-and-animation.css">
 </head>
 
 <body>
@@ -24,14 +23,14 @@
                     <div class="form-item">
                         <label for="first-name">First Name</label>
                         <div class="validation-container">
-                            <input type="text" id="first-name" name="first-name" required />
+                            <input type="text" id="first-name" name="first-name" required>
                             <span></span>
                         </div>
                     </div>
                     <div class="form-item">
                         <label for="last-name">Last Name</label>
                         <div class="validation-container">
-                            <input type="text" id="last-name" name="last-name" required />
+                            <input type="text" id="last-name" name="last-name" required>
                             <span></span>
                         </div>
                     </div>
@@ -48,15 +47,15 @@
                     <div class="form-item">
                         <label for="email">E-mail</label>
                         <div class="validation-container">
-                            <input type="email" id="email" name="email" required />
+                            <input type="email" id="email" name="email" required>
                             <span></span>
                         </div>
                     </div>
                     <div class="form-item">
                         <label for="day">Date of Birth</label>
                         <div class="date-select">
-                            <select name="day" id="day" required></select>
-                            <select name="month" id="month" required>
+                            <select name="day" id="day"></select>
+                            <select name="month" id="month">
                                 <option value="January">January</option>
                                 <option value="February">February</option>
                                 <option value="March">March</option>
@@ -70,18 +69,18 @@
                                 <option value="November">November</option>
                                 <option value="December">December</option>
                             </select>
-                            <select name="year" id="year" required></select>
+                            <select name="year" id="year"></select>
                         </div>
                     </div>
                     <div class="form-item form-item-radio">
-                        <legend>Gender</legend>
+                        <div class="legend">Gender</div>
                         <div class="gender-radio-buttons">
                             <div class="gender-radio">
-                                <input type="radio" id="male" name="gender" value="gender" checked required />
+                                <input type="radio" id="male" name="gender" value="gender" checked required>
                                 <label for="male" class="gender">Male</label>
                             </div>
                             <div class="gender-radio">
-                                <input type="radio" id="female" name="gender" value="gender" />
+                                <input type="radio" id="female" name="gender" value="gender">
                                 <label for="female" class="gender">Female</label>
                             </div>
                         </div>
@@ -89,14 +88,14 @@
                     <div class="form-item" id="password-container">
                         <label for="password">Password</label>
                         <div class="validation-container">
-                            <input type="password" id="password" name="password" required />
+                            <input type="password" id="password" name="password" required>
                             <span></span>
                         </div>
                     </div>
                     <div class=" form-item" id="confirm-password-container">
                         <label for="confirm-password">Confirm password</label>
                         <div class="validation-container">
-                            <input type="password" id="confirm-password" name="confirm-password" required />
+                            <input type="password" id="confirm-password" name="confirm-password" required>
                             <span></span>
                         </div>
                     </div>
@@ -108,9 +107,6 @@
             </form>
         </main>
     </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"
         integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
